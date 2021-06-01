@@ -8,16 +8,16 @@ function calculateBMI (e) {
   const height = document.getElementById('height1').value;
   const bmi = (weight/height*100)/height*100;
   if(bmi < 18.5) {
-    return document.getElementById('results').innerHTML = `<h3>Here's your result:</h3><p>Your BMI: ${bmi.toFixed(2)}<br />You are in underweight range.</p>`
+    return document.getElementById('results').innerHTML = `<h3>Here's your result:</h3><p>Your BMI: ${bmi.toFixed(2)}<br />You are in underweight range.</p><p>Check out diet plans <a href="diet.html">here.</a></p>`
   }
   else if(bmi > 18.5 && bmi < 25) {
-    return document.getElementById('results').innerHTML = `<h3>Here's your result:</h3><p>Your BMI: ${bmi.toFixed(2)}<br />You are in healthy weight range.</p>`
+    return document.getElementById('results').innerHTML = `<h3>Here's your result:</h3><p>Your BMI: ${bmi.toFixed(2)}<br />You are in healthy weight range.</p><p>Check out diet plans <a href="diet.html">here.</a></p>`
   }
   else if(bmi > 25 && bmi < 30) {
-    return document.getElementById('results').innerHTML = `<h3>Here's your result:</h3><p>Your BMI: ${bmi.toFixed(2)}<br />You are in overweight range.`
+    return document.getElementById('results').innerHTML = `<h3>Here's your result:</h3><p>Your BMI: ${bmi.toFixed(2)}<br />You are in overweight range.</p><p>Check out diet plans <a href="diet.html">here.</a></p>`
   }
   else {
-    return document.getElementById('results').innerHTML = `<h3>Here's your result:</h3><p>Your BMI: ${bmi.toFixed(2)}<br />You are in obese range.`
+    return document.getElementById('results').innerHTML = `<h3>Here's your result:</h3><p>Your BMI: ${bmi.toFixed(2)}<br />You are in obese range.</p><p>Check out diet plans <a href="diet.html">here.</a></p>`
   }
 }
 
